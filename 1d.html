@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Thumbnail Image Gallery</title>
+        <style>
+            h2{
+                text-align: center;
+                font-family: sans-serif;
+            }
+            img{
+                width:150px;
+                height:150px;
+                border:2px solid #ddd;
+                border-radius: 5px;
+                /*overflow: hidden;*/
+                object-fit: cover;
+                transition: transform 0.1;
+            }
+            img:hover{
+                transform:  scale(1.05);
+            }
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap:35px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Thumbnail Image Gallery</h2>
+        <div>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPIfiGgUML8G3ZqsNLHfaCnZK3I5g4tJabQ&s" ><img src="pic1.jpeg" alt="Image 1 Thumbnail"></a>
+        <a href="https://img.freepik.com/premium-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?semt=ais_hybrid" ><img src="pic2.jpeg" alt="Image 2 Thumbnail"></a>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZS2vxPRIs2azjOy4_iXSfArgrBiTKo5qlbMc70BufYEX9Bzifa2h8R1gyD0ae_up1JQ&usqp=CAU" ><img src="pic3.jpg" alt="Image 3 Thumbnail"></a>
+        <a href="https://static.vecteezy.com/system/resources/thumbnails/032/940/273/small_2x/green-meadow-lone-tree-tranquil-horizon-at-dawn-free-photo.jpg" ><img src="pic4.jpg" alt="Image 4 Thumbnail"></a>
+        <a href="https://static.vecteezy.com/system/resources/thumbnails/032/940/277/small_2x/green-meadow-tree-and-sky-at-sunset-free-photo.jpg" ><img src="" alt="Image 5 Thumbnail"></a>
+    </div>
+    </body>
+</html>

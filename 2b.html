@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Timetable Example</title>
+        <style>
+        body {
+            font-family:sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border-spacing: 5px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Timetable Example</h1>
+        <table border="1">
+            <caption>Section - C</caption>
+            <tr>
+                <th>Period</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th rowspan="2">12:40 PM - 1:40 PM</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+            <tr>
+                <th>Day/Time</th>
+                <th>9:00 AM - 9:50 AM</th>
+                <th>9:50 AM - 10:40 AM</th>
+                <th>11:00 AM - 11:50 AM</th>
+                <th>11:50 AM - 12:40 PM</th>
+                <th>1:40 PM - 2:30 PM</th>
+                <th>2:30 PM - 3:20 PM</th>
+                <th>3:20 PM - 4:10 PM</th>
+                <th>4:10 PM - 5:00 PM</th>    
+            </tr>
+            <tr>
+                <th>MON</th>
+                <td>SE</td>
+                <td>ADSAA</td>
+                <td>MEFA</td>
+                <td>OS</td>
+                <td rowspan="6">LUNCH</td>
+                <td colspan="3">II CSE C - FSD</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+                <th>TUE</th>
+                <td colspan="2">II CSE C - DT&I</td>
+                <td>ADSAA</td>
+                <td>P&S</td>
+                <td>MEFA</td>
+                <td>OS</td>
+                <td>SE</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+                <th>WED</th>
+                <td>ADSAA</td>
+                <td colspan="3">II CSE C - OS LAB</td>
+                <td>SE</td>
+                <td rowspan="2">P&S</td>
+                <td>OS</td>
+                <td>MEFA</td>
+            </tr>
+            <tr>
+                <th>THU</th>
+                <td>MEFA</td>
+                <td>P&S</td>
+                <td>FSD</td>
+                <td>OS</td>
+                <td>ADSAA</td>
+                <td>SE</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+                <th>FRI</th>
+                <td>OS</td>
+                <td>ADSAA</td>
+                <td>P&S</td>
+                <td>SE</td>
+                <td>MEFA</td>
+                <td colspan="2">II CSE C - DT&I</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+                <th>SAT</th>
+                <td>P&S</td>
+                <td>ADSAA</td>
+                <td>SE</td>
+                <td>MEFA</td>
+                <td>OS</td>
+                <td COLSpan="3">II CSE C - ADSAA LAB</td>
+            </tr>
+        </table>
+    </body>
+</html>
