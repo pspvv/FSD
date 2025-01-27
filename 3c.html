@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Types of CSS</title>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            *{
+                text-align: center;
+            }
+            h1{
+                color: rgb(9, 135, 238);
+                font-family:sans-serif;
+            }
+            #p{
+                font-size: 15px;
+                font-family:sans-serif;
+                color:rgba(6, 150, 6, 0.877);
+                font-weight: 550;
+            }
+            div{
+                background-color: #f2f2f2;
+                padding:1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Style Specification Formats</h1>
+            <p style="color:rgb(209, 3, 20);font-size:20px;font-family: sans-serif;">This paragraph uses <b>inline styles</b> to set color, font size, and alignment.</p>
+            <p id="p">This paragraph uses styles defined in the &lt;style&gt; tag inside the &lt;head&gt;.</p>
+            <p id="p1">This paragraph uses an <b>external styles</b> defined in an external CSS file.</p>
+        </div>
+    </body>
+</html>
