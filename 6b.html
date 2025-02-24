@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>JavaScript Output Methods</title>
+        <style>
+            body{
+                font-family:sans-serif;
+                text-align: center;
+            }
+            button{
+                margin: 5px;
+                color: white;
+                background-color: rgb(0, 132, 255);
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+            }
+            button:hover{
+                background-color: rgb(4, 83, 157);
+            }
+            div{
+                background-color: rgb(242, 239, 239);
+                padding: 1px;
+                border: 1px solid #bdb6b6;
+                margin: 20px;
+            }
+        </style>
+        <script>
+            function showAlert() {
+                alert("This is an alert box !");
+            }
+            function wtDoc() {
+                document.writeln("This text written directly to the document.");
+            }
+            function logToC() {
+                console.log("This message is logged to the console.");
+            }
+            function updtiH(){
+                document.getElementById("op").innerHTML = "This text is updated in innerHTML.";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>JavaScript Output Methods</h1>
+        <button onclick="showAlert()">Show Alert</button>
+        <button onclick="wtDoc()">Write to Document</button>
+        <button onclick="logToC()">Log to Console</button>
+        <button onclick="updtiH()">Update Inner HTML</button>
+        <div><p id="op">Output will appear here.</p></div>
+</html>

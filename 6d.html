@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Voter Eligibility Check</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            table{
+                border-collapse: collapse;
+                margin:20px auto;
+                width: 30%;
+            }
+            th,td{
+                border:1px solid #333;
+                padding: 8px 12px;
+                text-align: center;
+            }
+            .eligible{
+                color: lightgreen;
+                font-weight: bold;
+            }
+            .ne{
+                color: rgb(255, 0, 0);
+                font-weight: bold;
+            }
+            h1{
+                text-align: center;
+            }
+            th{
+                background-color: #f0f0f0;
+            }
+        </style>
+        <script>
+            function checkVoterEligibility() {
+                var name=prompt("Enter your name: ");
+                var age=prompt("Enter your age: ");
+                document.getElementById("n").textContent = name;
+                document.getElementById("a").textContent = age;
+                if (age >= 18) {
+                    document.getElementById("e").textContent="Eligible to vote";
+                    document.getElementById("e").className="eligible";
+                } 
+                else {
+                    document.getElementById("e").textContent="Not Eligible to vote";
+                    document.getElementById("e").className="ne";
+               }
+            }
+        </script>
+    </head>
+    <body onload="checkVoterEligibility()">
+        <h1>Voter Eligibility Check</h1>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <td id="n"></td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td id="a"></td>
+            </tr>
+            <tr>
+                <th>Voter Eligibility</th>
+                <td id="e"></td>
+            </tr>
+        </table>
+    </body>
+</html>
