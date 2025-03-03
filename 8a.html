@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Finding largest number</title>
+        <style>
+            *{
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            button{
+                padding:8px;
+                border: none;
+                border-radius: 5px;
+                background-color: #0167ff;
+                color: white;
+            }
+            button:hover{
+                background-color: #062886;
+            }
+            div{
+                background-color: rgb(242, 239, 239);
+                border: 1px solid #bdb6b6;
+                margin: 20px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>Find the Largest Number</h1>
+        <button onclick="find()">Enter Numbers</button>
+        <div>
+            <h3>Click the button to enter numbers.</h3>
+        </div>
+        <script>
+            function find(){
+                var a=prompt("Enter the first number: ")
+                var b=prompt("Enter the second number: ")
+                var c=prompt("Enter the third number: ")
+                if(a==b && b==c){
+                    alert("EQUAL NUMBERS")
+                }
+                else{
+                    if(a>b){
+                        if(a>c){
+                            alert(a+" LARGER NUMBER")
+                        }
+                        else{
+                            alert(c+" LARGER NUMBER")
+                        }
+                    }
+                    else if(b>c){
+                        alert(b+" LARGER NUMBER")
+                    }
+                    else{
+                        alert(c+" LARGER NUMBER")
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

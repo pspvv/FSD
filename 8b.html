@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Week Days using Switch Case</title>
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+            h1{
+                text-align: center;
+            }
+            button{
+                padding:10 18px;
+                margin-right: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #0167ff;
+                color: white;
+            }
+            button:hover{
+                background-color: #062886;
+            }
+            #d1{
+                display: flex;
+                justify-content: center;
+                padding: 10 18px;
+                height:50px;
+            }
+            #d2{
+                background-color: rgb(237, 246, 250);
+                border: 1px solid #0167ff;
+                color: #0167ff;
+            }
+        </style>
+        <script>
+            function week(){
+                var a=prompt("Enter a number (1-7) for the day of the week:")
+                let day;
+                switch(a){
+                    case "1":day="Monday";
+                    break;
+                    case "2":day="Tuesday";
+                    break;
+                    case "3":day="Wednesday";
+                    break;
+                    case "4":day="Thursday";
+                    break;
+                    case "5":day="Friday";
+                    break;
+                    case "6":day="Saturday";
+                    break;
+                    case "7":day="Sunday";
+                    break;
+                    default:day="Invalid Day";
+                }
+            }   
+            document.getElementById("wd").innerHTML=day;
+        </script>
+    </head>
+    <body>
+        <h1>Week Days using Switch Case</h1>
+        <div id="d1">
+            <button onclick="week()">Enter Number</button>
+            <div id="d2">
+                <h3 id="wd">Click the button to enter a number.</h3>
+            </div>
+        </div>
+    </body>
+</html>
