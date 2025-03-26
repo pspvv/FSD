@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Window Object Properties & Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Window Object Properties & Methods</h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="askConfirm()">Confirm Action</button>
+    <button onclick="askPrompt()">Ask for Input</button>
+    <button onclick="showSize()">Show Window Size</button>
+    <button onclick="openNewTab()">Open New Tab</button>
+    <button onclick="refreshPage()">Refresh Page</button>
+    <p id="output"></p>
+    <script>
+        function showAlert() {
+            window.alert("This is an alert box using window.alert()!");
+        }
+        function askConfirm() {
+            let result = window.confirm("Do you want to proceed?");
+            document.getElementById("output").innerText = result ? "User clicked OK!" : "User clicked Cancel!";
+        }
+        function askPrompt() {
+            let name = window.prompt("Enter your name:");
+            if (name) {
+                document.getElementById("output").innerText = "Hello, " + name + "!";
+            }
+        }
+        function showSize() {
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            document.getElementById("output").innerText = "Window Size: " + width + " x " + height;
+        }
+        function openNewTab() {
+            window.open("https://www.google.com", "_blank");
+        }
+        function refreshPage() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>

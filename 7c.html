@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Array Object Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Array Object Methods</h1>
+    <p id="output"></p>
+    <button onclick="addElement()">Push (Add Item)</button>
+    <button onclick="removeElement()">Pop (Remove Last)</button>
+    <button onclick="sortArray()">Sort Array</button>
+    <button onclick="reverseArray()">Reverse Array</button>
+    <button onclick="spliceArray()">Splice (Remove & Insert)</button>
+    <button onclick="sliceArray()">Slice (Copy Part of Array)</button>
+    <script>
+        let fruits = ["Apple", "Banana", "Mango", "Orange"];
+        function displayArray() {
+            document.getElementById("output").innerHTML = "Array: " + fruits.join(", ");
+        }
+        function addElement() {
+            fruits.push("Grapes");
+            displayArray();
+        }
+        function removeElement() {
+            fruits.pop();
+            displayArray();
+        }
+        function sortArray() {
+            fruits.sort();
+            displayArray();
+        }
+        function reverseArray() {
+            fruits.reverse();
+            displayArray();
+        }
+        function spliceArray() {
+            fruits.splice(1, 1, "Pineapple");
+            displayArray();
+        }
+        function sliceArray() {
+            let slicedArray = fruits.slice(1, 3);
+            document.getElementById("output").innerHTML = "Sliced Array: " + slicedArray.join(", ");
+        }
+        displayArray();
+    </script>
+</body>
+</html>
